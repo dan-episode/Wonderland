@@ -189,7 +189,7 @@ $(function() {
 		dplayer.src(
 			{ type: "video/mp4", src: $dmp4 },
 			{ type: "video/webm", src: $dwebm },
-			{ type: "video/ogg", src: $odgg }
+			{ type: "video/ogg", src: $dogg }
 		);
 		if($(window).width() < 700) {
 		var pw = $('.dav .videoPlay').width(),
@@ -199,7 +199,7 @@ $(function() {
 		} else {
 			dplayer.width($dwidth).height($dheight)
 		}
-		if($loop == 'on') {
+		if($dloop == 'on') {
 			dplayer.loop(true);
 		} else {
 			dplayer.loop(false);
