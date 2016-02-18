@@ -81,7 +81,7 @@ function portfolio() {
 		'label'               => __( 'portfolio', 'wl' ),
 		'description'         => __( 'Post Type Description', 'wl' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'thumbnail' ),
+		'supports'            => array( 'title', 'thumbnail', 'publicize' ),
 		'taxonomies'          => array( 'type' ),
 		'hierarchical'        => false,
 		'public'              => true,
