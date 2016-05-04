@@ -119,13 +119,13 @@ $(function() {
 	});
 
 	if(element_exists('#wonderlandPlayer')) {
-		var player = videojs('wonderlandPlayer').ready(function() {
+		var player = videojs('wonderlandPlayer', {fluid: true}).ready(function() {
 			console.log('AV ready');
 		});
 	}
 
 	if(element_exists('#wonderlandPlayerDigital')) {
-		var dplayer = videojs('wonderlandPlayerDigital').ready(function() {
+		var dplayer = videojs('wonderlandPlayerDigital', {fluid: true}).ready(function() {
 			console.log('Digital AV ready');
 		});
 	}
